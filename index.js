@@ -100,7 +100,7 @@ app.get('/api/exercice/log', async (req, res) => {
     try{
         let user = await User.findOne({userId});
         if(user){
-            // find exercice using lead() to obtain plain JS object
+            // find exercice using lean() to obtain plain JS object
             Exercice
             .find({
                 username: user.username,
