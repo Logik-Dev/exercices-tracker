@@ -23,7 +23,14 @@
         <input type="text" placeholder="Durée (Minutes)" name="duration" pattern="[0-9]+" required> 
         <input type="text" placeholder="Date (JJ-MM-AAAA)" pattern="^[0-9]{2}-[0-9]{2}-[0-9]{4}$" name="date" >
         <input type="submit" value="VALIDER">
-        </form>
+    </form>
+    <div class="usage">
+        <p>Obtenir la liste des exercices d'un utilisateur:</p>
+            <div class="method-url">GET /api/exercice/log?{userId}[&from][&to][&limit]</div>
+        <p><b>{}</b> = Requis, <b>[]</b> = Optionnel</p>
+        <p><b>from, to </b>= dates(dd-mm-yyyy); <b>limit</b> = nombre</p>
+    </div>
+
  </div>
 </body>
 </html>
